@@ -1186,7 +1186,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                    <a href="${result.cfi}" class="result-link">(1) Какое ощущение возникает у человека</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1212,7 +1212,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
                    let additionalText = ""; 
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}${additionalText}</a>
+                    <a href="${result.cfi}" class="result-link">(2) Но что же делать с накапливающимся грязным бельём? </a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1236,7 +1236,7 @@ App.prototype.onSearchClick3 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">$(3) В чём же заключается эта, пока невидимая миру проблема</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1256,7 +1256,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(4) Но потом вдруг оказалось, что homo sapiens один на планете</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1275,7 +1275,7 @@ App.prototype.onSearchClick5 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(5) Однако в середине XX века произошел взрыв</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1294,7 +1294,7 @@ App.prototype.onSearchClick6 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(6) Так что же произошло?</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
